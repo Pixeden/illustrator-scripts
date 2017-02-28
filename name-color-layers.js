@@ -1,6 +1,6 @@
 #target Illustrator
 
-//  script.name = name-color-layers.jsx;  
+//  script.name = name-color-layers.js;  
 //  script.description = Loop each Artboard and set Layers name;  
 //  script.requirement = one document with at least one artboard;  
 //  script.parent = elrumordelaluz;  
