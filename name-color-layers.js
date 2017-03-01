@@ -33,7 +33,7 @@ function colorIconsLayers () {
     // Compound Paths Loop
     if (compPathCount > 0) {
       for (var z = 0; z < compPathCount; z++) {
-        usedLayers = processPath(doc.compPathCount[z], usedLayers)
+        usedLayers = processPath(doc.compoundPathItems[z], usedLayers)
       }
     }
     
