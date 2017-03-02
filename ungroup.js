@@ -21,19 +21,6 @@ function ungroupAll (doc) {
   }
 }
 
-var itemKinds = new Array(
-  'pathItems',
-  'compoundPathItems',
-  'textFrames',
-  'placedItems',
-  'rasterItems',
-  'meshItems',
-  'pluginItems',
-  'graphItems',
-  'symbolItems',
-  'groupItems',
-)
-
 function getChilds (obj) {
 	var arr = new Array()
 	for (var i=0; i < obj.pageItems.length; i++) {
