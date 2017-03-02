@@ -46,21 +46,22 @@ function colorIconsLayers () {
   }
 }
 
-function processPath (path, usedLayers, type) {
+function processPath (path, usedLayers) {
   var strokeName = 'stroke'
   var opacityName = 'opacity'
+  var testPath = isCompoundPath(path) ? path.pathItems[0] : path
   
   if (path.selected) {
-    if (isStroked(path)) {
+    if (isStroked(testPath)) {
       path.name = strokeName
     }
     
-    if (isOpacity(path)) {
+    if (isOpacity(testPath)) {
       path.name = opacityName
     }
     
-    if (isFilled(path) && path.parent.opacity === 100) {
-      var pathColor = getColor(path)
+    if (isFilled(testPath) && path.parent.opacity === 100) {
+      var pathColor = getColor(testPath)
       if (usedLayers.length > 0) {
         for (var i = 0; i < usedLayers.length; i++) {
           if (isEqualColor(usedLayers[i],pathColor)) {
@@ -94,6 +95,7 @@ function isEqualColor (obj1, obj2) {
 function isStroked (path) { return path.stroked && !path.filled }
 function isFilled (path) { return path.filled && !path.stroked && path.opacity === 100 }
 function isOpacity (path) { return path.opacity < 100 }
+function isCompoundPath (path) { return path.typename === "CompoundPathItem" }
 
 function selectArtboardByIndex (index) {
   doc.selection = null
