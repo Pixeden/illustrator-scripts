@@ -52,7 +52,7 @@ function ungroup (obj) {
 			try {
 				if (elems[i].parent.typename !== "Layer")
           elems[i].moveBefore(obj)
-				if(elems[i].typename==="GroupItem" && elems[i].opacity === 100)
+				if(elems[i].typename === "GroupItem" && elems[i].opacity === 100)
           ungroup(elems[i])
 			} catch(e) {
         alert("Something went wrong...")
