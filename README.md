@@ -10,7 +10,7 @@ and avoid _hand-made_ possible human errors when working with _Icons_.
 
  Sets a progressive _Layer_ name (default _layerX_ where `x` is a progressive number) depending on the `fillColor` or `strokeColor` (if it is a stroked or filled `path`). In case an element in the same _Artboard_ has the same _color_ will be the same _Layer_ name stored in memory.
  
- **important note**: this `script` is intended to **use only when** there is an _unified_ style in the _Artboard_, that is: **all paths are stroked or all paths are filled, not mixed**. 
+ **important note**: this `script` is intended to **use only when** there is an _unified_ style in the _Artboard_, that is: **all paths are stroked or all paths are filled, not mixed**. Use [is-unified script](is-unified.js) to check if all _Artboards_ respect this rule.
 
 
 #### [Name Mixed Layers](name-color-layers.js) 
@@ -40,3 +40,8 @@ Due to an _Illustrator_ bug when exporting named _layers_ in nested `groups` and
 #### [Unify Color](unifyColor.js) 
 
 Once all desired _layers_ were named, sometimes is useful to set all `paths` with one given _color_. As in the othr `scripts`, will set the `strokeColor` or `fillColor` depending on the `path`.
+
+
+#### [Is Unified Style](is-unified.js) 
+
+Checks if each _Artboard_ has `paths` with strictly the same style (`filled` or `stroked`). The `script` breaks as soon as find a _midex Artboard_ and advice which one is (also remains selected, making easy to fix).
