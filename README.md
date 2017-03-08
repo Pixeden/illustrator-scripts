@@ -1,7 +1,7 @@
 # illustrator-scripts
 
-`Javascript` scripts for _Adobe Illustrator_ that helps improve productivity
-and avoid _hand-made_ possible human errors when working with _Icons_.
+> _Adobe Illustrator_ `js` scripts that could help to improve productivity
+and avoid possible human errors when working with _Icons_.
 
 
 #### [Name Basic Layers](name-basic-layers.js) 
