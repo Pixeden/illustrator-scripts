@@ -45,3 +45,8 @@ Once all desired _layers_ were named, sometimes is useful to set all `paths` wit
 #### [Is Unified Style](is-unified.js) 
 
 Checks if each _Artboard_ has `paths` with strictly the same style (`filled` or `stroked`). The `script` breaks as soon as find a _midex Artboard_ and advice which one is (also remains selected, making easy to fix).
+
+
+#### [Rename Artboards](rename-artborard.js) 
+
+Loop into each _Artboard_ and rename with a `String` provided plus the _Artboard_ number as a suffix.
