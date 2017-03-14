@@ -50,3 +50,8 @@ Checks if each _Artboard_ has `paths` with strictly the same style (`filled` or 
 #### [Rename Artboards](rename-artborard.js) 
 
 Loop into each _Artboard_ and rename with a `String` provided plus the _Artboard_ number as a suffix.
+
+
+#### [Center in Artboard](center-in-artboard.js) 
+
+Loop into each _Artboard_ and center its content. To guarantee the relative positions of its `paths`, the `script` group the content before center it. Could be [ungroup](ungroup.js) in future.
