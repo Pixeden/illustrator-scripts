@@ -14,7 +14,7 @@ if (app.documents.length > 0) {
 }
 
 function setColor () {
-  var hexIn = Window.prompt ("Enter the new HEX Color", 612)
+  var hexIn = Window.prompt ("Enter the new HEX Color", '#202020')
   var rgbOut = hexToRGB(hexIn)
   if (rgbOut) {
     var pathCount = doc.pathItems.length
