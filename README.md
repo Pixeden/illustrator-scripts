@@ -55,3 +55,6 @@ Loop into each _Artboard_ and rename with a `String` provided plus the _Artboard
 #### [Center in Artboard](center-in-artboard.js) 
 
 Loop into each _Artboard_ and center its content. To guarantee the relative positions of its `paths`, the `script` group the content before center it. Could be [ungroup](ungroup.js) in future.
+
+#### [Export PNG](export-png.js) 
+Loop into each _Artboard_ and exports as `.png` file in _1x_, _2x_ and _3x_ resolution, organized in different folders. Filename will be the `String` provided followed by the _Artboard_ name. 
