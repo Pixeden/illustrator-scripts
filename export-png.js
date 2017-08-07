@@ -23,10 +23,11 @@ function exportPNG() {
     exportOptions.transparency = false
     
     var type = ExportType.PNG24
+    var basePath = Folder.selectDialog ('Choose base Folder where export.')
     
-    var folder1x = new Folder(doc.path + '/1x')
-    var folder2x = new Folder(doc.path + '/2x')
-    var folder3x = new Folder(doc.path + '/3x')
+    var folder1x = new Folder(basePath + '/1x')
+    var folder2x = new Folder(basePath + '/2x')
+    var folder3x = new Folder(basePath + '/3x')
     if(!folder1x.exists) folder1x.create();
     if(!folder2x.exists) folder2x.create();
     if(!folder3x.exists) folder3x.create();
