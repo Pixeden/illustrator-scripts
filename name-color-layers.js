@@ -14,35 +14,52 @@ if (app.documents.length > 0) {
 }
 
 function colorIconsLayers () {
+  var artbsString = prompt ("Enter Indexes of Artboards to process (comma separated), empty for all Artboards.", "", "Copy Artboards")
   var pathCount = doc.pathItems.length
   var compPathCount = doc.compoundPathItems.length
   var groupCount = doc.groupItems.length
   
-  // Loop into each Artboard
-  for (i = 0; i < doc.artboards.length; i++) {
-    var usedLayers = new Array()
-    selectArtboardByIndex(i)
-    
-    // Simple Paths Loop
-    if (pathCount > 0) {
-      for (var y = 0; y < pathCount; y++) {
-        usedLayers = processPath(doc.pathItems[y], usedLayers)
-      }
-    }
-  
-    // Compound Paths Loop
-    if (compPathCount > 0) {
-      for (var z = 0; z < compPathCount; z++) {
-        usedLayers = processPath(doc.compoundPathItems[z], usedLayers)
-      }
+  if (artbsString != null) {
+    var onlySelected = artbsString !== ''
+    var lengthLoop =  doc.artboards.length
+    var selArtbs = []
+    if (onlySelected) {
+      selArtbs = artbsString.split(',')
+      lengthLoop = selArtbs.length
     }
     
-    // Groups Loop
-    if (groupCount > 0) {
-      for (var g = 0; g < groupCount; g++) {
-        usedLayers = processPath(doc.groupItems[g], usedLayers)
+    // Loop into each Artboard
+    for (i = 0; i < lengthLoop; i++) {
+      var usedLayers = new Array()
+      var index = i
+      if (onlySelected) {
+        index = selArtbs[i]-1
+      }
+      selectArtboardByIndex(index)
+      
+      // Simple Paths Loop
+      if (pathCount > 0) {
+        for (var y = 0; y < pathCount; y++) {
+          usedLayers = processPath(doc.pathItems[y], usedLayers)
+        }
+      }
+    
+      // Compound Paths Loop
+      if (compPathCount > 0) {
+        for (var z = 0; z < compPathCount; z++) {
+          usedLayers = processPath(doc.compoundPathItems[z], usedLayers)
+        }
+      }
+      
+      // Groups Loop
+      if (groupCount > 0) {
+        for (var g = 0; g < groupCount; g++) {
+          usedLayers = processPath(doc.groupItems[g], usedLayers)
+        }
       }
     }
+  } else {
+    alert('bye…')
   }
 }
 
