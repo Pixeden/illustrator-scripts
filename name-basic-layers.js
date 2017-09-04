@@ -62,7 +62,7 @@ function colorIconsLayers () {
 }
 
 function processPath (path, usedLayers) {
-  var testPath = isCompoundPath(path) ? path.pathItems[0] : path
+  var testPath = isCompoundPath(path) && path.pathItems.length > 0 ? path.pathItems[0] : path
   
   if (path.selected) {
     if ((isStroked(testPath) || isFilled(testPath)) && path.parent.opacity === 100) {
