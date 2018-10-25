@@ -107,4 +107,6 @@ Loop into each _Artboard_ and exports as `.png` file in _1x_, _2x_ and _3x_ reso
 
 </details>
 
+---
+
 These `scripts` helps authoring _Icons_ and apply rules needed to work in [Orion Icon Library App](https://orioniconlibrary.com/app)
