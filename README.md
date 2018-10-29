@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-  <code>illustrator-scriptsObject</code>
+  <code>illustrator-scripts</code>
 </h3>
 
 > _Adobe Illustrator_ `js` scripts that could help to improve productivity
