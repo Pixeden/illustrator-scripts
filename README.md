@@ -1,4 +1,10 @@
-# illustrator-scripts
+<p align="center">
+  <img alt="illustrator-scripts" title="illustrator-scripts" src="icon.svg" width="150"> 
+</p>
+
+<h3 align="center">
+  <code>illustrator-scriptsObject</code>
+</h3>
 
 > _Adobe Illustrator_ `js` scripts that could help to improve productivity
 > and avoid possible human errors when working with SVG Icons.
