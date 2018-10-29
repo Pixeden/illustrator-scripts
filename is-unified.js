@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = is-unified.js;  
-//  script.description = Check if all paths in each Artboard has unified style;  
+//  script.description = Checks if each Artboard has paths with strictly the same style;  
 //  script.requirement = one document with at least one artboard;  
-//  script.parent = elrumordelaluz;  
+//  script.parent = pixeden;  
 //  script.elegant = false; 
 
 

@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = center-in-artboard.js;  
-//  script.description = Loop each Artboard and center its content;  
+//  script.description = Loop into each Artboard and center its content;  
 //  script.requirement = one document with at least one artboard;  
-//  script.parent = elrumordelaluz;  
+//  script.parent = pixeden;  
 //  script.elegant = false; 
 
 if (app.documents.length > 0) {

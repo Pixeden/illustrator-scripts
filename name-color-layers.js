@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = name-color-layers.js;  
-//  script.description = Loop each Artboard and set Layers name;  
+//  script.description = Loop into each Artboard and set a name on each path that has stroke, transparency and color;
 //  script.requirement = one document with at least one artboard;  
-//  script.parent = elrumordelaluz;  
+//  script.parent = pixeden;  
 //  script.elegant = false; 
 
 if (app.documents.length > 0) {

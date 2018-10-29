@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = export-png.js;
-//  script.description = Exports Artboards into separated .png files;
+//  script.description = Loop into each Artboard and exports as a .png file in 1x, 2x and 3x resolution;
 //  script.requirement = one document with at least one artboard;
-//  script.parent = elrumordelaluz;
+//  script.parent = pixeden;
 //  script.elegant = false;
 
 if (app.documents.length > 0) {

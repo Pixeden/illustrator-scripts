@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = renameArtboards.js;  
-//  script.description = Loop each Artboard and set name based on String provided;  
+//  script.description = Loop into each Artboard and rename it with a String provided plus the Artboard number as a suffix;  
 //  script.requirement = one document with at least one artboard;  
-//  script.parent = elrumordelaluz;  
+//  script.parent = pixeden;  
 //  script.elegant = false; 
 
 if (app.documents.length > 0) {

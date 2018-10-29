@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = ungroup.js;  
-//  script.description = Ungroup if not necessary;  
+//  script.description = ungroups everything but the transparency group;
 //  script.requirement = one document with at least one artboard;  
-//  script.parent = elrumordelaluz;  
+//  script.parent = pixeden;  
 //  script.elegant = false; 
 
 if (app.documents.length > 0) {

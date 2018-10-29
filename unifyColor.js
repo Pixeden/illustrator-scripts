@@ -1,9 +1,9 @@
 #target Illustrator
 
 //  script.name = unifyColor.js;  
-//  script.description = Loop each path and set same color;  
+//  script.description = Loop each path and set one given colorr;  
 //  script.requirement = one document with at least one artboard;  
-//  script.parent = elrumordelaluz;  
+//  script.parent = pixeden;  
 //  script.elegant = false; 
 
 if (app.documents.length > 0) {
