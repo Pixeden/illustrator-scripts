@@ -116,7 +116,7 @@ Loop into each _Artboard_ and exports as a `.png` file in _1x_, _2x_ and _3x_ re
 ### How To
 
 <p align="center">
-  <a href="howto-mp4">
+  <a href="howto.mp4">
     <img alt="illustrator-scripts-howto" title="illustrator-scripts-howto" src="howto.gif" width="450"> 
   </a>
 </p>
