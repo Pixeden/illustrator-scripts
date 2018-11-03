@@ -113,6 +113,14 @@ Loop into each _Artboard_ and exports as a `.png` file in _1x_, _2x_ and _3x_ re
 
 </details>
 
+### How To
+
+<p align="center">
+  <a href="howto-mp4">
+    <img alt="illustrator-scripts-howto" title="illustrator-scripts-howto" src="howto.gif" width="450"> 
+  </a>
+</p>
+
 ---
 
 These `scripts` helps authoring _Icons_ and apply rules needed to work in the [Orion Icon Library App](https://orioniconlibrary.com/app)
