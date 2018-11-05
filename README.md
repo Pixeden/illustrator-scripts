@@ -113,13 +113,19 @@ Loop into each _Artboard_ and exports as a `.png` file in _1x_, _2x_ and _3x_ re
 
 </details>
 
-### How To
+#### How to load and run the scripts in _Adobe Illustrator_
 
-<p align="center">
-  <a href="howto.mp4">
-    <img alt="illustrator-scripts-howto" title="illustrator-scripts-howto" src="howto.gif" width="450"> 
-  </a>
-</p>
+Once open the file with at least one _Artboard_
+
+```
+File > Scripts > Other Script…
+```
+
+Then select the `script` you want to use.
+
+![illustrator-scripts-howto](howto.gif)
+
+[How to (video)](howto.mp4)
 
 ---
 
